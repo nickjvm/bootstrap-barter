@@ -6,15 +6,18 @@ $(document).ready(function() {
 		offset:5,
 	});
 	$(window).on("scroll",function() {
+		var $filters = $(".filters");
 		if($(this).scrollTop() > $(".sidebar").offset().top) {
-			$(".filters").css({
+			$filters.css({
 				position:"fixed",
-				top:10
+				top:10,
+				width:$filters.outerWidth()
 			});
 		} else {
-			$(".filters").css({
+			$filters.css({
 				position:'relative',
-				top:0
+				top:0,
+				width:'auto'
 			})
 		}
 	});
