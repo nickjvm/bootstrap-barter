@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Bootstrap Barter</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+  <link rel="stylesheet" href="css/jquery.tagsinput.css">
+    <link href='http://fonts.googleapis.com/css?family=Domine|Elsie|Vidaloka|Marko+One|Trocchi|Arapey' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tipsy.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  </head>
+    <body>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+      <header>
+        <div class="navbar " role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="logo" href="/"></a>
+          </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+              <!-- <ul class="nav navbar-nav">
+                <li>
+                <a href="#">Accellerant</a>
+              </li>
+                <li>
+                <a href="#">Stories</a>
+              </li>
+                <li>
+                <a href="#">Resources</a>
+              </li>
+            </ul> -->
+            <ul class="list-inline pull-right user-tools">
+              <li><a href="#">My profile</a></li>
+              <li><a href="#">Sign out</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+        <div class="container">
+          <div class="row">
+          
+        </div>
+        <!-- search results-->
+          <div class="row">
+            <div class="sidebar">
+              <div class="filters">
+
+             <h3>Narrow results</h3>
+              <form>
+                <h4>Min Average rating:</h4>
+                <ul class="sub-form-list list-unstyled rating">
+                  <li>
+                    <input type="radio" name="rating" id="rating-0"/>
+                    <label for="rating-0">No rating </label>
+                  </li><li>
+                    <input type="radio" name="rating" id="rating-1"/>
+                    <label for="rating-1">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="rating" id="rating-2"/>
+                    <label for="rating-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="rating" id="rating-3"/>
+                    <label for="rating-3">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-o"></i>
+                      <i class="fa fa-star-o"></i>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="rating" id="rating-4"/>
+                    <label for="rating-4">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" name="rating" id="rating-5"/>
+                    <label for="rating-5">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </label>
+                  </li>
+                </ul>
+                <h4>Skills</h4>
+                  <ul class="sub-form-list list-unstyled">
+                    <li>
+                      <input type="checkbox" checked />
+                      <label class="tag">Legal advice</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" checked />
+                      <label class="tag">Real estate</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" checked />
+                      <label class="tag">Accounting</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" checked />
+                      <label class="tag">Bookkeeping</label>
+                    </li>
+                  </ul>
+                <h4>Verification</h4>
+                <ul class="list-unstyled sub-form-list">
+                  <li>
+                    <input type="checkbox" id="verified-only"><label for="verified-only"><span class="verified">Verified users only</span>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+            <div id="main" class="sidebar-left ">
+              <div class="col-lg-12 top-search">
+                <form>
+                  <div class="col-sm-5">
+                  <input class="form-control make-tags" type="text" value="legal advice" placeholder="I'm looking for..."/>
+                </div>
+                  <div class="col-sm-5">
+                  <input class="form-control make-tags"  type="text" value="Social media" placeholder="I can offer..."/>
+                </div>
+                <button name="search" class="btn btn-primary">Search</button>
+              </form>
+            </div>
+            <h2>We've found <strong>98</strong> people with the skills you seek.</h2>
+              <div class="results">
+                <div class="row result">
+                  <div class="profile-pic col-sm-2">
+                    <img class="" src="../img/thomas.jpg"/>
+                    <a href="mailto:bootmail-4382950589@bootstrapbarter.co" class="btn btn-default btn-block">
+                      <i class="fa fa-envelope-o"></i> Email me</a>
+                  </div>
+                  <div class="col-sm-10 result-details">
+                    <h3 class="verified tipsified" title="Verified user">Thomas M. Cochrane</h3>
+                    <p class="profile">
+                      Starting my career and seeking a trainee position in Sales / Business Development within a Fortune 500 Company or an Account Manager at a Social Media Agency. I’m someone who likes to contribute and grow within a company. 
+                    </p>
+                    <p>Has a passion for the relational side of business and believes being a renaissance man is a noble goal.  Interested in growing skills in marketing, sales, strategic partnerships, business development, management.
+                    </p>
+                    <div class="row card">
+                      <div class="col-sm-4">
+                        <h4>I'm looking for</h4>
+                        <span class="tag">Market research</span>
+                        <span class="tag">SEO</span>
+                      </div>
+                      <div class="col-sm-3">
+                        <h4>I can offer</h4>
+                          <ul class="list-unstyled">
+                          <span class="tag">Social media</span>
+                          <span class="tag">Market penetration</span>
+                        </ul>
+                      </div>
+                      <div class="col-sm-5 track-record">
+                        <h4>Track record</h4>
+                          <ul>
+                            <li>
+                            <span class="faux-label">Overall quality</span>
+                            <span class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            </span>
+                            </li>
+                              <li>
+                              <span class="faux-label">Innovation</span>
+                              <span class="rating">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star-o"></i>
+                              </span>
+                            </li>
+                              <li>
+                              <span class="faux-label">Communication</span>
+                              <span class="rating">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star-o"></i>
+                              </span>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+                <div class="row result">
+                  <div class="profile-pic col-sm-2">
+                    <img class="" src="../img/nick.jpg"/>
+                    <a href="mailto:bootmail-4382950589@bootstrapbarter.co" class="btn btn-default btn-block">
+                      <i class="fa fa-envelope-o"></i> Email me</a>
+                  </div>
+                  <div class="col-sm-10">
+                  <h3 class="verified tipsified" title="Verified user">Nick VanMeter</h3>
+                  <p class="profile">
+                    Creative professional with significant experience in the graphic design industry. Proficient in the Adobe Creative Suite, including Illustrator, PhotoShop, InDesign, DreamWeaver, and FireWorks; some experience with Flash. Strong focus on web design and development with HTML, CSS, PHP, and Content Management Systems, but also experienced in the area of print design.
+                  </p>
+                  <div class="row card">
+                    <div class="col-sm-4">
+                    <h4>I'm looking for</h4>
+                    <span class="tag">Legal advice</span>
+                    <span class="tag">SEO</span>
+                    <span class="tag">Graphic Design</span>
+                    <span class="tag">Web Design</span>
+                    <span class="tag">Equity</span>
+                  </div>
+                  <div class="col-sm-3">
+                    <h4>I can offer</h4>
+                      <ul class="list-unstyled">
+                      <span class="tag">Web development</span>
+                      <span class="tag">PHP</span>
+                      <span class="tag">HTML5</span>
+                      <span class="tag">CSS3</span>
+                      <span class="tag">jQuery</span>
+                      <span class="tag">CodeIgniter</span>
+                      <span class="tag">Front-end Development</span>
+                    </ul>
+                  </div>
+                  <div class="col-sm-5 track-record">
+                    <h4>Track record</h4>
+                      <ul>
+                        <li>
+                        <span class="faux-label">Overall quality</span>
+                        <span class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        </span>
+                      </li>
+                        <li>
+                        <span class="faux-label">Innovation</span>
+                        <span class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        </span>
+                      </li>
+                        <li>
+                        <span class="faux-label">Communication</span>
+                        <span class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row result">
+              <span class="newbie">new member</span>
+              <div class="profile-pic col-sm-2">
+                    <img class="" src="../img/ceo.jpg"/>
+                    <a href="mailto:bootmail-4382950589@bootstrapbarter.co" class="btn btn-default btn-block">
+                      <i class="fa fa-envelope-o"></i> Email me</a>
+                  </div>
+              <div class="col-sm-10">
+              <h3>Jane Doe</h3>
+              <p class="profile">
+              Executive vice president and the chief financial officer of Athlead. As CFO, I oversee financial management of the company, its financial reporting and transparency, and for multiple corporate functions including Controller, Treasury, Investor Relations, Tax and long-range planning.
+              </p>
+                <div class="row card">
+                  <div class="col-sm-4">
+                  <h4>I'm looking for</h4>
+                  <span class="tag">Web development</span>
+                  <span class="tag">SEO</span>
+                  <span class="tag">Market research</span>
+                  <span class="tag">Social Media</span>
+                  <span class="tag">Graphic Design</span>
+                </div>
+                  <div class="col-sm-3">
+                  <h4>I can offer</h4>
+                    <ul class="list-unstyled">
+                    <span class="tag">Legal council</span>
+                    <span class="tag">Accounting</span>
+                    <span class="tag">Finances</span>
+                    <span class="tag">Bookeeping</span>
+                  </ul>
+                </div>
+                <div class="col-sm-5 track-record">
+                  <h4>Track record</h4>
+                  <p>Jane is ready to pull up her bootstraps and deliver!</p>
+                  <a class="text-centered btn btn-primary">Give her a shot!</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="row result">
+            <span class="newbie">new member</span>
+
+              <div class="profile-pic col-sm-2">
+                    <img class="" src="../img/sandra.jpg"/>
+                    <a href="mailto:bootmail-4382950589@bootstrapbarter.co" class="btn btn-default btn-block">
+                      <i class="fa fa-envelope-o"></i> Email me</a>
+                  </div>
+              <div class="col-sm-10">
+              <h3 class="verified">Sandra Valdez</h3>
+              <p class="profile">
+              Recently ranked in the top agents at Rincon Corporation, I am a respected expert in the sale and purchase of distinctive listed and confidentially offered luxury estates, vineyards, homes and land in a broad range of prices.
+              </p>
+                <div class="row card">
+                  <div class="col-sm-4">
+                  <h4>I'm looking for</h4>
+                  <span class="tag">Web development</span>
+                  <span class="tag">SEO</span>
+                  <span class="tag">Market research</span>
+                  <span class="tag">Social Media</span>
+                  <span class="tag">Graphic Design</span>
+                </div>
+                  <div class="col-sm-4">
+                  <h4>I can offer</h4>
+                    <ul class="list-unstyled">
+                    <span class="tag">Legal council</span>
+                    <span class="tag">Accounting</span>
+                    <span class="tag">Bookeeping</span>
+                    <span class="tag">Finances</span>
+                  </ul>
+                </div>
+                <div class="col-sm-4 track-record">
+                  <h4>Track record</h4>
+                  <p>Jane is ready to pull up her bootstraps and deliver!</p>
+                  <a class="text-centered btn btn-primary">Give her a shot!</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="pager-footer">
+          <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+         <footer>
+          <p>&copy; Bootstrap Barter 2014<span class="pull-right"> <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></span></p>
+        </footer>
+      </div>
+
+    </div>
+        
+         
+        </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/jquery.tagsinput.js"></script>
+        <script src="js/jquery.tipsy.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+      </body>
+    </html>
